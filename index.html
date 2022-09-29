@@ -1,0 +1,42 @@
+<!--comment-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer></script>
+    <title>media-tracker</title>
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="form-side">
+            <form class="form-tile">
+                <h1>Poseidon's Media Tracker</h1>
+                <h2>Add New Media</h2>
+                <label for="form-title">Show/Movie Title:</label>
+			    <input type="text" id="form-title" name="form-title" placeholder="Title" required />
+			    <label for="form-length">Content:</label>
+			    <input type="text" id="form-length" name="form-length" placeholder="How many seasons long?" required />
+			    <label for="form-watched">Watched:</label>
+			    <input type="text" id="form-watched" name="form-watched" placeholder="How much have you watched?" required />
+			    <label for="form-score">Score:</label>
+                <input type="text" id="form-score" name="form-score" placeholder="__/10" required />
+			    <button type="button" onclick="addMediaToTracker()">Add Entry</button>
+            </form>
+        </div>
+
+
+        <div class="display-side">
+            <div clsss="list-container">
+                <div id="media-list" style="display: grid; grid-template-columns: 1fr 1fr"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/*comment*/
+/* {
+    border: 1px solid red;
+}*/
+
+body {
+    min-width: 410px;
+    background-color: grey;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr, 3fr;
+}
+
+.form-side {
+    grid-column-start: 1;
+    grid-column-end: 2
+}
+
+.form-tile {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.display-side {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: grey;
+    text-align: center;
+}
+
+.list-container {
+
+}
+
+.media-row {
+    border-radius: 25px; 
+    background-color: white; 
+    border: 2px solid black;
+    margin: 5px;
+}
