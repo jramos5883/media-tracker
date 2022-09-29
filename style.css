@@ -6,7 +6,7 @@
 body {
     min-width: 410px;
     background-color: grey;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -25,8 +25,14 @@ body {
     justify-content: center;
     text-align: center;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 10px;
     border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+/*Position used to make form side sticky*/
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .display-side {
@@ -36,13 +42,18 @@ body {
     text-align: center;
 }
 
-.list-container {
-
-}
-
 .media-row {
-    border-radius: 25px; 
+    border-radius: 10px; 
     background-color: white; 
     border: 2px solid black;
     margin: 5px;
+}
+
+.addEntry {
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.form-title {
+    font-size: 50px;
 }
